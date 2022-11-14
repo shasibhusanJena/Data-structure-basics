@@ -1,13 +1,16 @@
+
 package oops;
 
 public class constOverloadEmp {
 
 	public constOverloadEmp() {
-		// TODO Auto-generated constructor stub
 		System.out.println("inside defalut constructor");
 	}
-	void constOverloadEmp(String int){
-		System.out.println("String obj called");
+	void constOverloadEmp(int x) {
+		System.out.println("inside parametrized constructor .."+x);
 	}
-	
+	void constOverloadEmp(String str) {
+		System.out.println("inside parametrized constructor .."+str);
+	}
+
 }
