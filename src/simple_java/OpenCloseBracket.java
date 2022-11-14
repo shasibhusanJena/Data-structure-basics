@@ -43,6 +43,6 @@ public class OpenCloseBracket{
 	}
 	public static void main(String[] args) {
 		OpenCloseBracket b1 = new OpenCloseBracket();
-		System.out.println(b1.isValid("{}{}{}"));
+		System.out.println(b1.isValid("{}"));
 	}
 }
