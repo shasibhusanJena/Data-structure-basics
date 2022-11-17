@@ -6,7 +6,6 @@ package simple_java;
  */
 public class SwapCharInNumber {
 
-
 	public void swapcharinNumber(char[] arr) {
 		
 		int mid =  (arr.length/2);
