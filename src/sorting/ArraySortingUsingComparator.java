@@ -5,8 +5,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 /*
+ * input : Student[] arr type
  * sort a Student object using comparator interface
- * Print all values in the array using Arrays.toString(arr) method.
+ * 
  */
 class Student{
 	int rollNo;
@@ -35,7 +36,7 @@ class SortByRollNo implements Comparator<Student>{
 	
 }
 
-public class ArraySort5 {
+public class ArraySortingUsingComparator {
 	public static void main(String[] args) {
 	
 	Student[] arr = {new Student(3, "amit", "Blore"),
