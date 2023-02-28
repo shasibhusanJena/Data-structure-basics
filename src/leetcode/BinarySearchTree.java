@@ -7,7 +7,8 @@ class BinarySearchTree {
     /* Class containing left
        and right child of current node
      * and key value*/
-    class Node {
+
+	class Node {
         int key;
         Node left, right;
  

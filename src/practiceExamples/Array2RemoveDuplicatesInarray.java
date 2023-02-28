@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class RemoveDuplicatesInarray {
+public class Array2RemoveDuplicatesInarray {
 
 	public static void removeDuplicate(int[] arr) {
 		int arrlen =arr.length;
@@ -17,6 +17,8 @@ public class RemoveDuplicatesInarray {
 				arr[j++] = arr[i];
 			}
 		}
+		// As above forloop we are running till < arrlen-1 ,
+		// so last value we are assigning manually as shown below arr[j++] = arr[arrlen-1]
 		arr[j++]= arr[arrlen-1];
 		for (int i = 0; i < j; i++) {
 			System.out.print(arr[i]+" ");
@@ -51,6 +53,6 @@ public class RemoveDuplicatesInarray {
 		
 	//	RemoveDuplicatesInarray.removeDuplicateinArrayUsingHashMap(arr);
 	//	RemoveDuplicatesInarray.removeDuplicateinArrayUsingSet(arr);
-		RemoveDuplicatesInarray.removeDuplicate(arr);
+		Array2RemoveDuplicatesInarray.removeDuplicate(arr);
 	}
 }

@@ -3,7 +3,7 @@ package practiceExamples;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ArrayCombinationSum1 {
+public class Array1CombinationSum1 {
 
 	public static void main(String[] args) {
 		int[] arr = new int[]{2,4,6,8};

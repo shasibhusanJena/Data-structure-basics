@@ -1,4 +1,4 @@
-package others;
+package top20;
 
 import java.util.Arrays;
 /**
@@ -6,11 +6,11 @@ import java.util.Arrays;
  * @author shjena
  * remove duplicate values from the array
  */
-public class RemoveDuplicatesFromArray {
+public class Array_RemoveDuplicatesFromArray {
 
 	public void printValue(int arr[]) {
 		// Print all value in the array
-		System.out.println("inserted values are :-");
+		System.out.print("inserted values are :-  ");
 		for(int i =0 ;i<arr.length; i++) {
 			System.out.print(arr[i]);
 		}
@@ -50,7 +50,7 @@ public class RemoveDuplicatesFromArray {
 	public static void main(String[] args) {
 	
 		int[] arr = {1,4,5,3,2,4,2,4,2,7,6,8};
-		RemoveDuplicatesFromArray rmd = new RemoveDuplicatesFromArray();
+		Array_RemoveDuplicatesFromArray rmd = new Array_RemoveDuplicatesFromArray();
 		int result = rmd.removeDuplicate(arr,arr.length);
 		System.out.println("\n Distinct values are ");
 		for (int i = 0; i < result; i++) {
