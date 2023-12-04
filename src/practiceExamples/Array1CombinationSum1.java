@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class Array1CombinationSum1 {
 
 	public static void main(String[] args) {
-		int[] arr = new int[]{2,4,6,8};
-		ArrayList<Integer> list = new ArrayList<>();
+		Integer[] arr = new Integer[]{2,4,6,8};
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		
 		list.add(Arrays.asList(arr));
 		System.out.println(list);
