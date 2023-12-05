@@ -34,3 +34,11 @@ In Selection sort as we have 2 loops this is also Quadratic with time complexity
 - by default it assign 10 no , we have 3 element to insert then theres is a waste of 7 capacity , so better to add capacity as per requirement, as shown in 
 
 	ArrayList(Collection<? extends E> c) method.
+
+#VECTOR
+
+- Vector is synchronized and If a thread-safe implementation is not needed, it is recommended to use ArrayList in place of Vector
+- Each Item in the list is called a node.
+- The first item in the list is head of the list.
+- last element in the list is Null.
+- The time complexity will be O(1), as we are adding value to the start of the linked list, so it does not matter, how much more elements we are adding time complexity going to be O(1) always.
