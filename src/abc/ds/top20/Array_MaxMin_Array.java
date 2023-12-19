@@ -12,7 +12,7 @@ Read more: https://www.java67.com/2014/02/how-to-find-largest-and-smallest-numbe
 		
 		int maximum = Integer.MIN_VALUE;
 		int minimum = Integer.MAX_VALUE;
-		
+		System.out.println("maximum "+maximum+" minimum "+minimum);
 		for (int i = 0; i < array.length; i++) {
 			if(array[i] > maximum) {
 				maximum =array[i];

@@ -16,6 +16,4 @@ public class Array_MissingIntegerInArray {
         int[] arr = { 1, 2, 3, 5, 6 };
         System.out.println(MissingNumber(arr));
     }
-
-
 }

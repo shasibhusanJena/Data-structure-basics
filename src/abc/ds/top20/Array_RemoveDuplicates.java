@@ -1,10 +1,10 @@
-package practiceExamples;
+package abc.ds.top20;
 
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-public class Array2RemoveDuplicatesInarray {
+public class Array_RemoveDuplicates {
 
 	public static void removeDuplicate(int[] arr) {
 		int arrlen =arr.length;
@@ -53,6 +53,6 @@ public class Array2RemoveDuplicatesInarray {
 		
 	//	RemoveDuplicatesInarray.removeDuplicateinArrayUsingHashMap(arr);
 	//	RemoveDuplicatesInarray.removeDuplicateinArrayUsingSet(arr);
-		Array2RemoveDuplicatesInarray.removeDuplicate(arr);
+		Array_RemoveDuplicates.removeDuplicate(arr);
 	}
 }

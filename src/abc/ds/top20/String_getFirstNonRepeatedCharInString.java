@@ -1,7 +1,7 @@
 package abc.ds.top20;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 
 /**
@@ -21,7 +21,7 @@ public class String_getFirstNonRepeatedCharInString {
 	
 	public static void getFirstNonRepeatedChar(String str)throws RuntimeException {
 		// create a linedHashMap to store the key values
-		HashMap<Character, Integer> counts = new LinkedHashMap<>();
+		Map<Character, Integer> counts = new LinkedHashMap<>();
 		
 		// now convert array into a charArray and run over it;
 		char[] charArr = str.toCharArray();
