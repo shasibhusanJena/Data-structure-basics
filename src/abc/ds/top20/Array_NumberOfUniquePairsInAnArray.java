@@ -30,12 +30,13 @@ public class Array_NumberOfUniquePairsInAnArray {
 				s.add(new Point(arr[i],arr[j]));
 			}
 		}
-		System.out.println("values in the set are: "+s);
 		
 		return s.size();
 	}
 	public static void main(String[] args) {
-		int[] array = new int[] {1,2,3};
+		
+		int[] array = new int[] {1,1,2}; // return 4
+	//	int[] array = new int[] {1,2,3}; // return 9
 		
 		System.out.println(count(array,array.length));
 		

@@ -4,9 +4,10 @@ import java.util.Arrays;
 /**
  * 
  * @author shjena
- * remove duplicate values from the array
+ * remove duplicate values from the array 
+ * this method is called using "Extra space"
  */
-public class Array_RemoveDuplicatesFromArray {
+public class Array_RemoveDuplicatesWithoutCollection {
 
 	public void printValue(int arr[]) {
 		// Print all value in the array
@@ -50,7 +51,7 @@ public class Array_RemoveDuplicatesFromArray {
 	public static void main(String[] args) {
 	
 		int[] arr = {1,4,5,3,2,4,2,4,2,7,6,8};
-		Array_RemoveDuplicatesFromArray rmd = new Array_RemoveDuplicatesFromArray();
+		Array_RemoveDuplicatesWithoutCollection rmd = new Array_RemoveDuplicatesWithoutCollection();
 		int result = rmd.removeDuplicate(arr,arr.length);
 		System.out.println("\n Distinct values are ");
 		for (int i = 0; i < result; i++) {

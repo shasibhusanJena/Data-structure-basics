@@ -2,7 +2,7 @@ package abc.ds.top20;
 
 import java.util.Scanner;
 /**
- * Although the entire array is not sorted from left to right, the subarray on the left of the pivot and on the right of the pivot will still be sorted. 
+ * Although the entire array is not sorted from left to right, the subarray on the left and on the right of the pivot will still be sorted. 
  * We can use this fact and apply binary search to find the element in the array in O(log(n)) time complexity. 
  * Following is the solution to the problem with comments for clarity:
  * @author shjena
@@ -11,27 +11,27 @@ import java.util.Scanner;
 public class Array_RotatedSortedArraySearch {
 
 	private static int search(int[] nums, int target) {
-        int start = 0;
-        int end = nums.length - 1;
+        int startIndex = 0;
+        int endIndex = nums.length - 1;
 
-        while(start <= end) {
-            int mid = (start + end)/2;
+        while(startIndex <= endIndex) {
+            int midIndex = (startIndex + endIndex)/2;
 
-            if(target == nums[mid]) {
-                return mid;
+            if(target == nums[midIndex]) {
+                return midIndex;
             }
 
-            if(nums[start] <= nums[mid]) { // left array is sorted
-                if(target >= nums[start] && target < nums[mid]) { // target lies between start and mid index
-                    end = mid-1;
+            if(nums[startIndex] <= nums[midIndex]) { // left array is sorted
+                if(target >= nums[startIndex] && target < nums[midIndex]) { // target lies between start and mid index
+                    endIndex = midIndex-1;
                 } else {
-                    start = mid+1;
+                    startIndex = midIndex+1;
                 }
             } else { // right array is sorted
-                if(target > nums[mid] && target <= nums[end]) { // target lies between mid and end index
-                    start = mid+1;
+                if(target > nums[midIndex] && target <= nums[endIndex]) { // target lies between mid and end index
+                    startIndex = midIndex+1;
                 } else {
-                    end = mid-1;
+                    endIndex = midIndex-1;
                 }
             }
         }
@@ -39,19 +39,10 @@ public class Array_RotatedSortedArraySearch {
         return -1;
     }
 
-
     public static void main(String[] args) {
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Enter number of element in Array");
-        int n = keyboard.nextInt();
-        int[] nums = new int[n];
-        for(int i = 0; i < n; i++) {
-          nums[i] = keyboard.nextInt(); 
-        }
-        System.out.println("check index location of :");
-        int target = keyboard.nextInt();
-        keyboard.close();
 
-        System.out.printf("Search(%d) = %d%n", target, search(nums, target));
+    	int[] arr = new int[] {1,4,5,6,7,8,9,11};
+    	int target = 9;
+        System.out.printf("Index of target int %d  is %d ", target, search(arr, target));
     }
 }
