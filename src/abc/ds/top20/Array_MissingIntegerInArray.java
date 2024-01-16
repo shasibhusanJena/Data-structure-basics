@@ -9,7 +9,8 @@ public class Array_MissingIntegerInArray {
         int sum2=0;
         for(int i=0;i<n;i++)
           sum2+=arr[i];
-        return sum1-sum2;
+        System.out.println("Sum1 "+sum1+" Sum2 "+sum2);
+        return sum2-sum1;
     }
     public static void main(String[] args)
     {
