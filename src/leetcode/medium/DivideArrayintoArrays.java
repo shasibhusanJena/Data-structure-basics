@@ -2,6 +2,7 @@ package leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /*
@@ -33,7 +34,7 @@ public class DivideArrayintoArrays {
 		Arrays.sort(nums);
 		List<int[]> res = new ArrayList<>();
 		for(int i=2; i<nums.length;i =i+3) {
-			System.out.println(nums[i-2]+" "+nums[i-1]+" "+nums[i]);
+		//	System.out.println(nums[i-2]+" "+nums[i-1]+" "+nums[i]);
 			if(nums[i]-nums[i-2]>k) {
 				return new int[][] {};
 			}
@@ -45,6 +46,13 @@ public class DivideArrayintoArrays {
 	
 public static void main(String[] args) {
 	int[] arr = {1,3,4,8,7,9,3,5,1};
-	new DivideArrayintoArrays().divideArray(arr,2);
+	int[][] res  = new DivideArrayintoArrays().divideArray(arr,2);
+	for(int i =0 ; i < res.length;i++) {
+		for (int j = 0; j < res[i].length; j++) {
+			System.out.print(res[i][j]+" ");
+		}
+		System.out.println();
+		
+	}
 }
 }
